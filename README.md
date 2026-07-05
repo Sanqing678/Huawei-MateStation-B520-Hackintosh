@@ -74,34 +74,39 @@
 
 ```
 EFI/OC/Kexts/
-├── Lilu.kext                   ✅ 内核补丁框架
-├── VirtualSMC.kext             ✅ SMC 模拟
-├── AppleALC.kext               ✅ 声卡驱动
-├── RealtekRTL8111.kext         ✅ 有线网卡驱动
-├── AirportItlwm.kext           ✅ Intel AX201 Wi-Fi
-├── IntelBluetoothFirmware.kext ✅ Intel 蓝牙
-├── IntelBTPatcher.kext         ✅ 蓝牙补丁
-├── BlueToolFixup.kext          ✅ 蓝牙修复
-├── USBPorts.kext               ✅ USB 定制映射
-├── SMCProcessor.kext           ✅ CPU 传感器
-├── SMCSuperIO.kext             ✅ 风扇/温度
-└── RestrictEvents.kext         ✅ 事件限制
+├── Lilu.kext           ✅
+├── VirtualSMC.kext           ✅
+├── WhateverGreen.kext           ✅
+├── AppleALC.kext           ✅
+├── RealtekRTL8111.kext           ✅
+├── AirportItlwm.kext           ✅
+├── IntelBluetoothFirmware.kext           ✅
+├── IntelBTPatcher.kext           ✅
+├── BlueToolFixup.kext           ✅
+├── USBToolBox.kext           ✅
+├── UTBMap.kext           ✅
+├── SMCProcessor.kext           ✅
+├── SMCSuperIO.kext           ✅
+├── SMCLightSensor.kext           ✅
+├── RestrictEvents.kext           ✅
+├── XHCI-unsupported.kext           ✅
+├── AMFIPass.kext           ✅
+├── AppleMCEReporterDisabler.kext           ✅
+├── HibernationFixup.kext           ✅
+├── IO80211FamilyLegacy.kext           ✅
+├── IOSkywalkFamily.kext           ✅
+└── NVMeFix.kext           ✅
 ```
-
 ### SSDT 热补丁
 
 ```
 EFI/OC/ACPI/
-├── SSDT-PLUG.aml       ✅ CPU 电源管理 (XCPM)
-├── SSDT-EC.aml         ✅ EC 仿冒 (Comet Lake 必需)
-├── SSDT-USBX.aml       ✅ USB 电源属性
-├── SSDT-SBUS.aml       ✅ SMBus 支持
-├── SSDT-MCHC.aml       ✅ MCHC 仿冒
-├── SSDT-HPET.aml       ✅ HPET IRQ 修复
-├── SSDT-RTC0.aml       ✅ RTC 兼容性
-└── SSDT-DMAC.aml       ✅ DMA 控制器修复
+├── SSDT-EC-USBX-DESKTOP.aml       ✅
+├── SSDT-SBUS-MCHC.aml       ✅
+├── SSDT-AWAC.aml       ✅
+├── SSDT-DMAC.aml       ✅
+└── SSDT-GPRW.aml       ✅
 ```
-
 ---
 
 ## 🚀 快速开始
